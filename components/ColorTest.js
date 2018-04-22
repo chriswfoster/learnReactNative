@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleSheet, Text, View, Image } from "react-native"
+import { StyleSheet, Text, View, Image, Button } from "react-native"
 
 export default class ColorTest extends React.Component {
   constructor() {
@@ -15,9 +15,11 @@ export default class ColorTest extends React.Component {
       uri: "https://static.pexels.com/photos/248797/pexels-photo-248797.jpeg"
     }
     return (
-      <View style={styles.container} onPress={() => alert("hi")}>
-        <Text style={{ color: "red" }}> Testerrrr</Text>
-        <Text>MoRE SDF TESXT</Text>
+      <View style={styles.container}>
+        <Button onPress={() => alert("hi")} title="Test 5000">
+          <Text style={{ color: "red" }}> Testerrrr</Text>
+          <Text>MoRE SDF TESXT</Text>
+        </Button>
       </View>
     )
   }

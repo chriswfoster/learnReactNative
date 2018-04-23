@@ -1,5 +1,7 @@
 import React from "react"
 import { StyleSheet, Text, View, Image, Button, TextInput } from "react-native"
+import ScrollDemo from './ScrollDemo'
+
 
 export default class ColorTest extends React.Component {
   constructor() {
@@ -31,6 +33,7 @@ export default class ColorTest extends React.Component {
           onChangeText={text => this.setState({ texttyped: text })}
         />
         <Text style={styles.textComponents}>{this.state.texttyped}</Text>
+  
       </View>
     )
   }

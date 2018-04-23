@@ -2,6 +2,7 @@ import React from "react"
 import { StyleSheet, Text, View, Image } from "react-native"
 import ImageComp from "./components/ImageComp"
 import ColorTest from "./components/ColorTest"
+import ScrollDemo from './components/ScrollDemo'
 
 export default class App extends React.Component {
   constructor() {
@@ -15,6 +16,7 @@ export default class App extends React.Component {
         <Text>Test</Text>
         {/* <ImageComp /> */}
         <ColorTest />
+        <ScrollDemo />
       </View>
     )
   }
